@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    font-size: 1rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input,
+form button{
+    padding: 0.5em;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #ffff;
+}
+
+form button{
+    color:#8BC6EC;
+    background: #fff;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+form button:hover{
+    background: #8BC6EC;
+    color: #fff;
+}
