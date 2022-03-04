@@ -43,3 +43,87 @@ form button:hover{
     background: #8BC6EC;
     color: #fff;
 }
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+
+ .todo-container li{
+    
+    list-style: none;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: .5em;
+    color: #000000;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.todo-container li{
+    flex: 1;
+}
+
+.complete-btn,
+.delete-btn{
+    padding: .75em;
+    font-size: .75rem;
+    border: 0;
+    background-color: #8BC6EC;
+    color:#fff;
+    cursor: pointer;
+}
+.complete-btn:hover,
+.delete-btn:hover{
+    background-color: #ecf0f1;
+    color:#8BC6EC;
+    transition: all .3s ease;
+}
+
+.delete-btn {
+    background-color: #c0392b;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+select{
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.select{
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.filter-todo{
+    border: none;
+    padding: .5em;
+    font-size: 1.45rem;
+    border-left: .5px solid #8BC6EC;
+    border-right: .5px solid #8BC6EC;
+}
+
+/* Customs Animation */
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
